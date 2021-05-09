@@ -57,3 +57,5 @@ function longestIncreasingSubsequence(array){
 }
 
 console.log(longestIncreasingSubsequence(array))
+
+// hi there my name is alex
