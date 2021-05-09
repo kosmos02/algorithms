@@ -1,10 +1,6 @@
-// const teamMeetings = [
-//     { startTime: 0,  endTime: 1 },
-//     { startTime: 3,  endTime: 5 },
-//     { startTime: 4,  endTime: 8 },
-//     { startTime: 10, endTime: 12 },
-//     { startTime: 9,  endTime: 10 },
-//   ]
+// Your company built an in-house calendar tool called HiCal. You want to add a feature to see the times in a day when everyone is available.
+
+// To do this, you’ll need to know when any team is having a meeting. In HiCal, a meeting is stored as a tuple ↴ of integers (start_time, end_time). These integers represent the number of 30-minute blocks past 9:00am.
 
 const teamMeetings = [
     {startTime: 5, endTime: 7},
@@ -13,8 +9,6 @@ const teamMeetings = [
     {startTime: 0, endTime: 2},
     {startTime: 11, endTime: 12},
 ]
-
-
 
 function mergeRanges(teamMeetings){
     let updatedSchedule = []

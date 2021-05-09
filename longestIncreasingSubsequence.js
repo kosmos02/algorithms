@@ -57,7 +57,3 @@ function longestIncreasingSubsequence(array){
 }
 
 console.log(longestIncreasingSubsequence(array))
-
-// I would like to try these out a bit more
-
-// This is the longest increasing subsequence
