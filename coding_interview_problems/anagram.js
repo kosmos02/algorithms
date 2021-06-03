@@ -12,24 +12,9 @@ function anagrams(stringA, stringB) {
     const fixedStringA = stringA.replace(/[^\w]/g, "").toLowerCase()
     const fixedStringB = stringB.replace(/[^\w]/g, "").toLowerCase()
 
-    let charMapA = {}
-    let charMapB= {}
+    let charMapA = createCharMap(fixedStringA)
+    let charMapB= createCharMap(fixedStringB)
 
-    fixedStringA.split('').map(char => {
-        if (!charMapA[char]){
-            charMapA[char] = 1
-        } else {
-            charMapA[char]++
-        }
-    })
-
-    fixedStringB.split('').map(char => {
-        if (!charMapB[char]){
-            charMapB[char] = 1
-        } else {
-            charMapB[char]++
-        }
-    })
 
     if (Object.keys(charMapA).length != Object.keys(charMapB).length){
         return false
@@ -43,6 +28,19 @@ function anagrams(stringA, stringB) {
         return true
     }
 
+}
+
+function createCharMap(charArray){
+    charMap = {}
+
+    charArray.split('').map(char => {
+        if (!charMap[char]){
+            charMap[char] = 1
+        } else {
+            charMap[char]++
+        }
+    })
+    return charMap
 }
 
 console.log(anagrams("HELLO THERE!!!!!", "hello there"))
