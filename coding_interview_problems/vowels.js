@@ -7,17 +7,30 @@
 //   vowels('Why do you ask?') --> 4
 //   vowels('Why?') --> 0
 
-function vowels(str) {
-    let vowelCount = 0
+// function vowels(str) {
+//     let vowelCount = 0
 
-    const lowerString = str.toLowerCase()
+//     const lowerString = str.toLowerCase()
 
-    for (let i = 0; i < str.length; i++){
-        if (lowerString[i] === 'a' || lowerString[i] === 'e' || lowerString[i] === 'i' || lowerString[i] === 'o' || lowerString[i] === 'u'){
-            vowelCount++
-        } 
+//     for (let i = 0; i < str.length; i++){
+//         if (lowerString[i] === 'a' || lowerString[i] === 'e' || lowerString[i] === 'i' || lowerString[i] === 'o' || lowerString[i] === 'u'){
+//             vowelCount++
+//         } 
+//     }
+//     return vowelCount
+// }
+
+function vowels(str){
+    let count = 0
+    const checker = "aeiou"
+
+    for (let char of str.toLowerCase()){
+        if (checker.includes(char)){
+            count++
+        }
     }
-    return vowelCount
+    return count
 }
+
 
 module.exports = vowels;
