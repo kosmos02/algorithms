@@ -26,7 +26,7 @@ function fizzBuzz(n) {
     }
 }
 
-//there is a recursive solution here
+//there should be a recursive solution here as well to demonstrate that you know recursive solutions. It is not the best solution. Show how to cache return values will help
 
 
 fizzBuzz(10)
