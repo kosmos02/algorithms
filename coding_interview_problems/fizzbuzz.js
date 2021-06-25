@@ -26,6 +26,9 @@ function fizzBuzz(n) {
     }
 }
 
+//there is a recursive solution here
+
+
 fizzBuzz(10)
 
 module.exports = fizzBuzz;
